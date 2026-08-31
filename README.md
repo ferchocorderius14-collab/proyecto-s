@@ -1,15 +1,13 @@
-#Prueba AES El Salvador 
--- =========================================================
--- AES EL SALVADOR - SOLUCIONES SOLARES
--- PROYECTO INTEGRADOR
--- DDL - ESQUEMA USUARIOS
--- =========================================================
+# Prueba AES El Salvador 
+-
+AES EL SALVADOR - SOLUCIONES SOLARES
+PROYECTO INTEGRADOR
+DDL - ESQUEMA USUARIOS. 
+-
 
 CREATE SCHEMA IF NOT EXISTS usuarios;
 
--- =========================================================
--- TABLA: usuarios.usuario
--- =========================================================
+# TABLA: usuarios.usuario
 
 CREATE TABLE IF NOT EXISTS usuarios.usuario (
     usuario_id SERIAL PRIMARY KEY,
@@ -30,9 +28,8 @@ CREATE TABLE IF NOT EXISTS usuarios.usuario (
     fecha_creacion TIMESTAMP NOT NULL DEFAULT now()
 );
 
--- =========================================================
--- TABLA: usuarios.cliente
--- =========================================================
+
+# TABLA: usuarios.cliente
 
 CREATE TABLE IF NOT EXISTS usuarios.cliente (
     cliente_id SERIAL PRIMARY KEY,
@@ -53,9 +50,9 @@ CREATE TABLE IF NOT EXISTS usuarios.cliente (
     fecha_registro TIMESTAMP NOT NULL DEFAULT now()
 );
 
--- =========================================================
--- TABLA: usuarios.empresa_perfil
--- =========================================================
+
+# TABLA: usuarios.empresa_perfil
+
 
 CREATE TABLE IF NOT EXISTS usuarios.empresa_perfil (
     cliente_id INTEGER PRIMARY KEY,
@@ -72,29 +69,26 @@ CREATE TABLE IF NOT EXISTS usuarios.empresa_perfil (
         ON DELETE CASCADE
 );
 
--- =========================================================
--- INDICES
--- =========================================================
+
+# INDICES
 
 CREATE INDEX IF NOT EXISTS idx_cliente_tipo
 ON usuarios.cliente(tipo_cliente);
 
 CREATE INDEX IF NOT EXISTS idx_empresa_perfil_cliente
 ON usuarios.empresa_perfil(cliente_id);
+-
 
-----------1
 
--- =========================================================
--- AES EL SALVADOR - SOLUCIONES SOLARES
--- PROYECTO INTEGRADOR
--- DDL - ESQUEMA CATALOGOS
--- =========================================================
+AES EL SALVADOR - SOLUCIONES SOLARES
+PROYECTO INTEGRADOR
+DDL - ESQUEMA CATALOGOS
+-
 
 CREATE SCHEMA IF NOT EXISTS catalogos;
 
--- =========================================================
--- TABLA: catalogos.categoria
--- =========================================================
+
+# TABLA: catalogos.categoria
 
 CREATE TABLE IF NOT EXISTS catalogos.categoria (
     categoria_id SERIAL PRIMARY KEY,
@@ -107,11 +101,12 @@ CREATE TABLE IF NOT EXISTS catalogos.categoria (
         FOREIGN KEY (categoria_padre_id)
         REFERENCES catalogos.categoria(categoria_id)
         ON DELETE SET NULL
+        
 );
 
--- =========================================================
--- TABLA: catalogos.proveedor
--- =========================================================
+
+# TABLA: catalogos.proveedor
+
 
 CREATE TABLE IF NOT EXISTS catalogos.proveedor (
     proveedor_id SERIAL PRIMARY KEY,
@@ -121,9 +116,9 @@ CREATE TABLE IF NOT EXISTS catalogos.proveedor (
     nit VARCHAR(17) NOT NULL UNIQUE
 );
 
--- =========================================================
--- TABLA: catalogos.producto
--- =========================================================
+
+# TABLA: catalogos.producto
+
 
 CREATE TABLE IF NOT EXISTS catalogos.producto (
     producto_id SERIAL PRIMARY KEY,
@@ -156,9 +151,8 @@ CREATE TABLE IF NOT EXISTS catalogos.producto (
         REFERENCES catalogos.proveedor(proveedor_id)
 );
 
--- =========================================================
--- INDICES
--- =========================================================
+
+# INDICES
 
 CREATE INDEX IF NOT EXISTS idx_producto_categoria
 ON catalogos.producto(categoria_id);
@@ -169,19 +163,18 @@ ON catalogos.producto(proveedor_id);
 CREATE INDEX IF NOT EXISTS idx_producto_estado
 ON catalogos.producto(estado);
 
------------2
 
--- =========================================================
--- AES EL SALVADOR - SOLUCIONES SOLARES
--- PROYECTO INTEGRADOR
--- DDL - ESQUEMA INVENTARIO
--- =========================================================
+
+AES EL SALVADOR - SOLUCIONES SOLARES
+PROYECTO INTEGRADOR
+DDL - ESQUEMA INVENTARIO
+-
 
 CREATE SCHEMA IF NOT EXISTS inventario;
 
--- =========================================================
--- TABLA: inventario.bodega
--- =========================================================
+
+# TABLA: inventario.bodega
+
 
 CREATE TABLE IF NOT EXISTS inventario.bodega (
     bodega_id SERIAL PRIMARY KEY,
@@ -191,9 +184,9 @@ CREATE TABLE IF NOT EXISTS inventario.bodega (
     departamento VARCHAR(50) NOT NULL
 );
 
--- =========================================================
--- TABLA: inventario.inventario_bodega
--- =========================================================
+
+# TABLA: inventario.inventario_bodega
+
 
 CREATE TABLE IF NOT EXISTS inventario.inventario_bodega (
     producto_id INTEGER NOT NULL,
@@ -216,9 +209,9 @@ CREATE TABLE IF NOT EXISTS inventario.inventario_bodega (
         ON DELETE CASCADE
 );
 
--- =========================================================
--- TABLA: inventario.movimiento_inventario
--- =========================================================
+
+# TABLA: inventario.movimiento_inventario
+
 
 CREATE TABLE IF NOT EXISTS inventario.movimiento_inventario (
     movimiento_id BIGSERIAL PRIMARY KEY,
@@ -251,9 +244,9 @@ CREATE TABLE IF NOT EXISTS inventario.movimiento_inventario (
         REFERENCES inventario.bodega(bodega_id)
 );
 
--- =========================================================
--- INDICES
--- =========================================================
+
+# INDICES
+
 
 CREATE INDEX IF NOT EXISTS idx_movimiento_producto_bodega_fecha
 ON inventario.movimiento_inventario
@@ -269,19 +262,18 @@ ON inventario.inventario_bodega(bodega_id);
 CREATE INDEX IF NOT EXISTS idx_inventario_producto
 ON inventario.inventario_bodega(producto_id);
 
------3
 
--- =========================================================
--- AES EL SALVADOR - SOLUCIONES SOLARES
--- PROYECTO INTEGRADOR
--- DDL - ESQUEMA COMPRAS
--- =========================================================
+
+
+AES EL SALVADOR - SOLUCIONES SOLARES
+PROYECTO INTEGRADOR
+DDL - ESQUEMA COMPRAS
 
 CREATE SCHEMA IF NOT EXISTS compras;
 
--- =========================================================
--- TABLA: compras.orden_compra
--- =========================================================
+
+# TABLA: compras.orden_compra
+
 
 CREATE TABLE IF NOT EXISTS compras.orden_compra (
     orden_compra_id SERIAL PRIMARY KEY,
@@ -316,9 +308,9 @@ CREATE TABLE IF NOT EXISTS compras.orden_compra (
         REFERENCES usuarios.usuario(usuario_id)
 );
 
--- =========================================================
--- TABLA: compras.detalle_orden_compra
--- =========================================================
+
+# TABLA: compras.detalle_orden_compra
+
 
 CREATE TABLE IF NOT EXISTS compras.detalle_orden_compra (
     detalle_orden_id SERIAL PRIMARY KEY,
@@ -343,9 +335,9 @@ CREATE TABLE IF NOT EXISTS compras.detalle_orden_compra (
         REFERENCES catalogos.producto(producto_id)
 );
 
--- =========================================================
--- INDICES
--- =========================================================
+
+# INDICES
+
 
 CREATE INDEX IF NOT EXISTS idx_orden_proveedor
 ON compras.orden_compra(proveedor_id);
@@ -365,19 +357,18 @@ ON compras.detalle_orden_compra(orden_compra_id);
 CREATE INDEX IF NOT EXISTS idx_detalle_orden_producto
 ON compras.detalle_orden_compra(producto_id);
 
-------4
 
--- =========================================================
--- AES EL SALVADOR - SOLUCIONES SOLARES
--- PROYECTO INTEGRADOR
--- DDL - ESQUEMA VENTAS
--- =========================================================
+
+AES EL SALVADOR - SOLUCIONES SOLARES
+PROYECTO INTEGRADOR
+DDL - ESQUEMA VENTAS
+-
 
 CREATE SCHEMA IF NOT EXISTS ventas;
 
--- =========================================================
--- TABLA: ventas.cupon
--- =========================================================
+
+# TABLA: ventas.cupon
+
 
 CREATE TABLE IF NOT EXISTS ventas.cupon (
     cupon_id SERIAL PRIMARY KEY,
@@ -396,10 +387,10 @@ CREATE TABLE IF NOT EXISTS ventas.cupon (
     fecha_expiracion DATE
 );
 
--- =========================================================
--- TABLA: ventas.pedido
--- CABECERA DE LA TRANSACCION
--- =========================================================
+
+TABLA: ventas.pedido
+CABECERA DE LA TRANSACCION
+
 
 CREATE TABLE IF NOT EXISTS ventas.pedido (
     pedido_id SERIAL PRIMARY KEY,
@@ -433,9 +424,9 @@ CREATE TABLE IF NOT EXISTS ventas.pedido (
         ON DELETE SET NULL
 );
 
--- =========================================================
--- TABLA: ventas.detalle_pedido
--- =========================================================
+
+# TABLA: ventas.detalle_pedido
+
 
 CREATE TABLE IF NOT EXISTS ventas.detalle_pedido (
     detalle_pedido_id SERIAL PRIMARY KEY,
@@ -466,9 +457,9 @@ CREATE TABLE IF NOT EXISTS ventas.detalle_pedido (
         REFERENCES inventario.bodega(bodega_id)
 );
 
--- =========================================================
--- TABLA: ventas.pedido_historial_estado
--- =========================================================
+
+# TABLA: ventas.pedido_historial_estado
+
 
 CREATE TABLE IF NOT EXISTS ventas.pedido_historial_estado (
     historial_id BIGSERIAL PRIMARY KEY,
@@ -491,9 +482,8 @@ CREATE TABLE IF NOT EXISTS ventas.pedido_historial_estado (
         REFERENCES usuarios.usuario(usuario_id)
 );
 
--- =========================================================
--- INDICES
--- =========================================================
+
+# INDICES
 
 CREATE INDEX IF NOT EXISTS idx_pedido_cliente
 ON ventas.pedido(cliente_id);
@@ -522,19 +512,19 @@ ON ventas.pedido_historial_estado(pedido_id);
 CREATE INDEX IF NOT EXISTS idx_historial_usuario
 ON ventas.pedido_historial_estado(usuario_id);
 
-------5
 
--- =========================================================
+
+
 -- AES EL SALVADOR - SOLUCIONES SOLARES
 -- PROYECTO INTEGRADOR
 -- DDL - ESQUEMA FACTURACION
--- =========================================================
+-
 
 CREATE SCHEMA IF NOT EXISTS facturacion;
 
--- =========================================================
--- TABLA: facturacion.pago
--- =========================================================
+
+# TABLA: facturacion.pago
+
 
 CREATE TABLE IF NOT EXISTS facturacion.pago (
     pago_id SERIAL PRIMARY KEY,
@@ -567,9 +557,9 @@ CREATE TABLE IF NOT EXISTS facturacion.pago (
         ON DELETE CASCADE
 );
 
--- =========================================================
--- TABLA: facturacion.dte_factura
--- =========================================================
+
+# TABLA: facturacion.dte_factura
+
 
 CREATE TABLE IF NOT EXISTS facturacion.dte_factura (
     dte_id SERIAL PRIMARY KEY,
@@ -589,9 +579,9 @@ CREATE TABLE IF NOT EXISTS facturacion.dte_factura (
         ON DELETE RESTRICT
 );
 
--- =========================================================
--- INDICES
--- =========================================================
+
+# INDICES
+
 
 CREATE INDEX IF NOT EXISTS idx_pago_pedido
 ON facturacion.pago(pedido_id);
@@ -607,5 +597,3 @@ ON facturacion.dte_factura(pago_id);
 
 CREATE INDEX IF NOT EXISTS idx_dte_fecha
 ON facturacion.dte_factura(fecha_emision);
-
------6
