@@ -1,0 +1,42 @@
+table '`workspace` `default` `producto_gold`'
+	lineageTag: a469f2cc-dc27-4d65-9640-9152dbf04afe
+
+	column categoria_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 6513844e-270c-4509-9a7d-e8e35028f89b
+		summarizeBy: none
+		sourceColumn: categoria_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column precio_promedio
+		dataType: double
+		lineageTag: d3240a11-589a-467a-8b8c-ee6b31343467
+		summarizeBy: none
+		sourceColumn: precio_promedio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column cantidad_productos
+		dataType: int64
+		formatString: 0
+		lineageTag: a7281b9a-a0d8-4e7b-87a2-a404be4c3f84
+		summarizeBy: none
+		sourceColumn: cantidad_productos
+
+		annotation SummarizationSetBy = Automatic
+
+	partition '`workspace` `default` `producto_gold`' = m
+		mode: import
+		source =
+				let
+				    Source = Databricks.Catalogs("dbc-dcdf396f-a484.cloud.databricks.com", "/sql/1.0/warehouses/1f39bc17b27d0644", [Catalog="workspace", Database="default", QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null]),
+				    producto_gold_default_workspace = Source{[Item="producto_gold",Schema="default",Catalog="workspace"]}[Data]
+				in
+				    producto_gold_default_workspace
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,113 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 54.110789784047483,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 336.18784342733829,
+            "y": 294.68077028702714
+          },
+          "nodeIndex": "`workspace` `default` `analisis_aes_gold`",
+          "nodeLineageTag": "65bd32ce-d47f-4563-b67d-d76f40690498",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 636.235987721815,
+            "y": 220.34038514351357
+          },
+          "nodeIndex": "`workspace` `default` `generacion_solar_gold`",
+          "nodeLineageTag": "8f5c7307-38c2-4c0a-9cf5-fa67d2456342",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 50.000000000000014,
+            "y": 165.10227741225788
+          },
+          "nodeIndex": "`workspace` `default` `inventario_producto_gold`",
+          "nodeLineageTag": "9480dfec-e3be-4c02-ac96-dad583761ec4",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 920.235987721815,
+            "y": 208.34038514351357
+          },
+          "nodeIndex": "`workspace` `default` `meteorologia_gold`",
+          "nodeLineageTag": "11d941b7-6494-439d-a8e5-a14d607ff757",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 50.039520160917263,
+            "y": -50
+          },
+          "nodeIndex": "`workspace` `default` `producto_gold`",
+          "nodeLineageTag": "a469f2cc-dc27-4d65-9640-9152dbf04afe",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 402.23598772181521,
+            "y": 17.542170338955998
+          },
+          "nodeIndex": "`workspace` `default` `ventas_producto_gold`",
+          "nodeLineageTag": "1b2ca65d-e763-4ea2-a6c8-f3e42c1cee99",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1204.235987721815,
+            "y": 172.34038514351357
+          },
+          "nodeIndex": "`workspace` `default` `ventas_radiacion_diaria_gold`",
+          "nodeLineageTag": "3b9bf3fd-2171-466f-8825-d32482c37efc",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 78.35775765812042,
+      "pinKeyFieldsToTop": true,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

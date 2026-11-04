@@ -1,0 +1,70 @@
+table '`workspace` `default` `meteorologia_gold`'
+	lineageTag: 11d941b7-6494-439d-a8e5-a14d607ff757
+
+	column fecha
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: dbfd73fe-940b-433f-bcab-56c211383139
+		summarizeBy: none
+		sourceColumn: fecha
+
+		variation Variation
+			isDefault
+			relationship: f9924411-a7b2-4ced-9724-57292f7d4bea
+			defaultHierarchy: LocalDateTable_35358c84-da90-4a88-8011-d5ace1b1f394.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column temperatura_promedio
+		dataType: double
+		lineageTag: 5d5cae66-054a-4eaa-94ff-8b5d6df937b2
+		summarizeBy: sum
+		sourceColumn: temperatura_promedio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pico_calor
+		dataType: double
+		lineageTag: 097be8d6-79f0-4df5-9852-e8f00a322f95
+		summarizeBy: sum
+		sourceColumn: pico_calor
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nubosidad_promedio
+		dataType: double
+		lineageTag: 5c87bced-65ab-4fda-bfc7-2d50f177edcd
+		summarizeBy: sum
+		sourceColumn: nubosidad_promedio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column radiacion_promedio
+		dataType: double
+		lineageTag: 36f31f39-4dd2-4a0f-b9fe-4f2ecfee702a
+		summarizeBy: sum
+		sourceColumn: radiacion_promedio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition '`workspace` `default` `meteorologia_gold`' = m
+		mode: import
+		source =
+				let
+				    Source = Databricks.Catalogs("dbc-dcdf396f-a484.cloud.databricks.com", "/sql/1.0/warehouses/1f39bc17b27d0644", [Catalog="workspace", Database="default", QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null]),
+				    meteorologia_gold_default_workspace = Source{[Item="meteorologia_gold",Schema="default",Catalog="workspace"]}[Data]
+				in
+				    meteorologia_gold_default_workspace
+
+	annotation PBI_ResultType = Table
+

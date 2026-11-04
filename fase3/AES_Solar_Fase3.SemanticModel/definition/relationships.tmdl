@@ -1,0 +1,43 @@
+relationship f9924411-a7b2-4ced-9724-57292f7d4bea
+	joinOnDateBehavior: datePartOnly
+	fromColumn: '`workspace` `default` `meteorologia_gold`'.fecha
+	toColumn: LocalDateTable_35358c84-da90-4a88-8011-d5ace1b1f394.Date
+
+relationship 2176b0e4-4b7b-428f-b703-ab91e0d18d31
+	joinOnDateBehavior: datePartOnly
+	fromColumn: '`workspace` `default` `ventas_radiacion_diaria_gold`'.fecha
+	toColumn: LocalDateTable_8d9511b7-ebc5-4a43-8c2d-f225182541a9.Date
+
+relationship AutoDetected_fde68928-dc5d-4004-95e8-37154572ea6a
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: '`workspace` `default` `inventario_producto_gold`'.producto_id
+	toColumn: '`workspace` `default` `analisis_aes_gold`'.producto_id
+
+relationship AutoDetected_ee49da33-2e48-424f-ba27-f069d6aac7c9
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: '`workspace` `default` `ventas_producto_gold`'.producto_id
+	toColumn: '`workspace` `default` `analisis_aes_gold`'.producto_id
+
+relationship AutoDetected_71ec3bc6-d9e7-4599-abb3-be65a45f9945
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: '`workspace` `default` `ventas_producto_gold`'.sku
+	toColumn: '`workspace` `default` `inventario_producto_gold`'.sku
+
+relationship AutoDetected_9d61d11c-2516-4b9c-8e66-26270581ceaf
+	fromColumn: '`workspace` `default` `analisis_aes_gold`'.categoria_id
+	toColumn: '`workspace` `default` `producto_gold`'.categoria_id
+
+relationship AutoDetected_c38b35bb-a547-415d-8db6-2c4142fd807d
+	isActive: false
+	fromColumn: '`workspace` `default` `inventario_producto_gold`'.categoria_id
+	toColumn: '`workspace` `default` `producto_gold`'.categoria_id
+
+relationship AutoDetected_f6ef35d0-a73f-44af-95df-11413217f5ff
+	isActive: false
+	fromColumn: '`workspace` `default` `ventas_producto_gold`'.categoria_id
+	toColumn: '`workspace` `default` `producto_gold`'.categoria_id
+

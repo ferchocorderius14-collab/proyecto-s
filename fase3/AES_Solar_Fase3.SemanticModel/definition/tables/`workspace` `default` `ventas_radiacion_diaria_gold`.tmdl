@@ -1,0 +1,96 @@
+table '`workspace` `default` `ventas_radiacion_diaria_gold`'
+	lineageTag: 3b9bf3fd-2171-466f-8825-d32482c37efc
+
+	column fecha
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 0f31ee76-3bd1-4ce4-b87f-a72bf868e7de
+		summarizeBy: none
+		sourceColumn: fecha
+
+		variation Variation
+			isDefault
+			relationship: 2176b0e4-4b7b-428f-b703-ab91e0d18d31
+			defaultHierarchy: LocalDateTable_8d9511b7-ebc5-4a43-8c2d-f225182541a9.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column total_pedidos
+		dataType: int64
+		formatString: 0
+		lineageTag: 850e83b6-a04a-4d09-ae8e-e3319f873f51
+		summarizeBy: sum
+		sourceColumn: total_pedidos
+
+		annotation SummarizationSetBy = Automatic
+
+	column unidades_vendidas
+		dataType: int64
+		formatString: 0
+		lineageTag: ca91d6df-df98-45f4-ba49-63a1c36b1f48
+		summarizeBy: sum
+		sourceColumn: unidades_vendidas
+
+		annotation SummarizationSetBy = Automatic
+
+	column ingresos_totales
+		dataType: double
+		lineageTag: 6b612af7-d4d7-47df-a872-0e1eeb88ee5f
+		summarizeBy: sum
+		sourceColumn: ingresos_totales
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column total_registrado_pedido
+		dataType: double
+		lineageTag: 3851084f-2e47-4291-9f2b-672f30c4de06
+		summarizeBy: sum
+		sourceColumn: total_registrado_pedido
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ticket_promedio
+		dataType: double
+		lineageTag: 8f3c4c92-87e2-4dfb-acdc-d198a34023b0
+		summarizeBy: sum
+		sourceColumn: ticket_promedio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column radiacion_kwh_m2_dia
+		dataType: double
+		lineageTag: f2e6a977-b21e-429b-ac41-49c31cbb305d
+		summarizeBy: sum
+		sourceColumn: radiacion_kwh_m2_dia
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nivel_radiacion
+		dataType: string
+		lineageTag: 537e2e4f-1213-4d21-a95c-9cbb4ce2f5f3
+		summarizeBy: none
+		sourceColumn: nivel_radiacion
+
+		annotation SummarizationSetBy = Automatic
+
+	partition '`workspace` `default` `ventas_radiacion_diaria_gold`' = m
+		mode: import
+		source =
+				let
+				    Source = Databricks.Catalogs("dbc-dcdf396f-a484.cloud.databricks.com", "/sql/1.0/warehouses/1f39bc17b27d0644", [Catalog="workspace", Database="default", QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null]),
+				    ventas_radiacion_diaria_gold_default_workspace = Source{[Item="ventas_radiacion_diaria_gold",Schema="default",Catalog="workspace"]}[Data]
+				in
+				    ventas_radiacion_diaria_gold_default_workspace
+
+	annotation PBI_ResultType = Table
+

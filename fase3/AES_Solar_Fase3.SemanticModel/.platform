@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "AES_Solar_Fase3"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "6905dcfa-e4a1-468f-b0ab-7c293b06a449"
+  }
+}

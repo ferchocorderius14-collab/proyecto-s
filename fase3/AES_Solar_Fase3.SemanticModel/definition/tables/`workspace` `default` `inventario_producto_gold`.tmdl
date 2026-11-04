@@ -1,0 +1,65 @@
+table '`workspace` `default` `inventario_producto_gold`'
+	lineageTag: 9480dfec-e3be-4c02-ac96-dad583761ec4
+
+	column producto_id
+		dataType: int64
+		formatString: 0
+		lineageTag: f6414b5d-cf4f-4d97-a598-ded9019f45bc
+		summarizeBy: none
+		sourceColumn: producto_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column sku
+		dataType: string
+		lineageTag: b489bdf6-3912-4969-a19b-ab07722da651
+		summarizeBy: none
+		sourceColumn: sku
+
+		annotation SummarizationSetBy = Automatic
+
+	column nombre
+		dataType: string
+		lineageTag: 29a48f4f-be3f-4776-9b3a-faa9e383a3f7
+		summarizeBy: none
+		sourceColumn: nombre
+
+		annotation SummarizationSetBy = Automatic
+
+	column categoria_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 39277cf9-2fa2-4c5a-acb9-a94110e90859
+		summarizeBy: sum
+		sourceColumn: categoria_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column precio_actual
+		dataType: double
+		lineageTag: d9097155-2f29-4432-83f2-c76cb3ec6e61
+		summarizeBy: sum
+		sourceColumn: precio_actual
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column stock_total
+		dataType: int64
+		formatString: 0
+		lineageTag: 76f3ce74-3cbd-4720-afaa-527cb9bb1170
+		summarizeBy: sum
+		sourceColumn: stock_total
+
+		annotation SummarizationSetBy = Automatic
+
+	partition '`workspace` `default` `inventario_producto_gold`' = m
+		mode: import
+		source =
+				let
+				    Source = Databricks.Catalogs("dbc-dcdf396f-a484.cloud.databricks.com", "/sql/1.0/warehouses/1f39bc17b27d0644", [Catalog="workspace", Database="default", QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null]),
+				    inventario_producto_gold_default_workspace = Source{[Item="inventario_producto_gold",Schema="default",Catalog="workspace"]}[Data]
+				in
+				    inventario_producto_gold_default_workspace
+

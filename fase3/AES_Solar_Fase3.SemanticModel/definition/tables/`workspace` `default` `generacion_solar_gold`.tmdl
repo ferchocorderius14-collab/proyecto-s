@@ -1,0 +1,47 @@
+table '`workspace` `default` `generacion_solar_gold`'
+	lineageTag: 8f5c7307-38c2-4c0a-9cf5-fa67d2456342
+
+	column anio
+		dataType: int64
+		formatString: 0
+		lineageTag: 2523185c-9145-42b1-aa2a-e9abdbfccd82
+		summarizeBy: sum
+		sourceColumn: anio
+
+		annotation SummarizationSetBy = Automatic
+
+	column generacion_solar_twh
+		dataType: double
+		lineageTag: c1125aca-8566-4b5c-81f8-a29eb5e75b02
+		summarizeBy: sum
+		sourceColumn: generacion_solar_twh
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column territorio
+		dataType: string
+		lineageTag: cde4ef17-2a86-4d3e-94f0-888df8bf8ce8
+		summarizeBy: none
+		sourceColumn: territorio
+
+		annotation SummarizationSetBy = Automatic
+
+	column iso3
+		dataType: string
+		lineageTag: fa7e633e-be8c-4ffe-9f20-77f5c233a278
+		summarizeBy: none
+		sourceColumn: iso3
+
+		annotation SummarizationSetBy = Automatic
+
+	partition '`workspace` `default` `generacion_solar_gold`' = m
+		mode: import
+		source =
+				let
+				    Source = Databricks.Catalogs("dbc-dcdf396f-a484.cloud.databricks.com", "/sql/1.0/warehouses/1f39bc17b27d0644", [Catalog="workspace", Database="default", QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null]),
+				    generacion_solar_gold_default_workspace = Source{[Item="generacion_solar_gold",Schema="default",Catalog="workspace"]}[Data]
+				in
+				    generacion_solar_gold_default_workspace
+
