@@ -1,0 +1,46 @@
+table Calendario
+	lineageTag: 5e132078-8d30-463e-8947-26ad4524f7bf
+	dataCategory: Time
+
+	column Date
+		isKey
+		formatString: General Date
+		lineageTag: c706f411-be36-48fa-a807-0906013b51dc
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Año
+		formatString: 0
+		lineageTag: 00b09b19-3082-41a6-b89b-f0299eb76e67
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Año]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mes
+		lineageTag: f7aba910-6be4-4bd1-b541-250ca9589082
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Mes]
+
+		annotation SummarizationSetBy = Automatic
+
+	column MesNum
+		formatString: 0
+		lineageTag: 1647d3c4-e29c-4959-b211-936c05a864b7
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [MesNum]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Calendario = calculated
+		mode: import
+		source = ADDCOLUMNS(CALENDARAUTO(), "Año", YEAR([Date]), "Mes", FORMAT([Date], "MMM"), "MesNum", MONTH([Date]))
+
+	annotation PBI_Id = 4f41ed766235468ea7e53d134131949b
+

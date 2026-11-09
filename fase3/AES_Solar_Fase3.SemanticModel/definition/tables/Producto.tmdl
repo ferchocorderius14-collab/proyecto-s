@@ -1,18 +1,18 @@
-table '`workspace` `default` `inventario_producto_gold`'
-	lineageTag: 9480dfec-e3be-4c02-ac96-dad583761ec4
+table Producto
+	lineageTag: 65bd32ce-d47f-4563-b67d-d76f40690498
 
 	column producto_id
 		dataType: int64
 		formatString: 0
-		lineageTag: f6414b5d-cf4f-4d97-a598-ded9019f45bc
-		summarizeBy: none
+		lineageTag: e1000208-080c-4686-9fc9-71e0a664e027
+		summarizeBy: sum
 		sourceColumn: producto_id
 
 		annotation SummarizationSetBy = Automatic
 
 	column sku
 		dataType: string
-		lineageTag: b489bdf6-3912-4969-a19b-ab07722da651
+		lineageTag: 36043419-1100-47ca-a997-8bf2718c97c9
 		summarizeBy: none
 		sourceColumn: sku
 
@@ -20,7 +20,7 @@ table '`workspace` `default` `inventario_producto_gold`'
 
 	column nombre
 		dataType: string
-		lineageTag: 29a48f4f-be3f-4776-9b3a-faa9e383a3f7
+		lineageTag: a968d97b-a395-453a-959c-81d18d341e14
 		summarizeBy: none
 		sourceColumn: nombre
 
@@ -29,15 +29,15 @@ table '`workspace` `default` `inventario_producto_gold`'
 	column categoria_id
 		dataType: int64
 		formatString: 0
-		lineageTag: 39277cf9-2fa2-4c5a-acb9-a94110e90859
-		summarizeBy: sum
+		lineageTag: 0eedc74c-ad6d-42a7-b58a-db9f84a2f017
+		summarizeBy: none
 		sourceColumn: categoria_id
 
 		annotation SummarizationSetBy = Automatic
 
 	column precio_actual
 		dataType: double
-		lineageTag: d9097155-2f29-4432-83f2-c76cb3ec6e61
+		lineageTag: e88f2bf1-f598-4164-81ea-94037531ef27
 		summarizeBy: sum
 		sourceColumn: precio_actual
 
@@ -48,18 +48,39 @@ table '`workspace` `default` `inventario_producto_gold`'
 	column stock_total
 		dataType: int64
 		formatString: 0
-		lineageTag: 76f3ce74-3cbd-4720-afaa-527cb9bb1170
+		lineageTag: 54cb2c2f-add3-4ce9-91fe-e04720a88879
 		summarizeBy: sum
 		sourceColumn: stock_total
 
 		annotation SummarizationSetBy = Automatic
 
-	partition '`workspace` `default` `inventario_producto_gold`' = m
+	column unidades_vendidas
+		dataType: int64
+		formatString: 0
+		lineageTag: de0bfa81-21e1-4f39-a173-c14cbceadadb
+		summarizeBy: sum
+		sourceColumn: unidades_vendidas
+
+		annotation SummarizationSetBy = Automatic
+
+	column ingresos_totales
+		dataType: double
+		lineageTag: dbfe1f7d-7b13-4493-825a-a987e153b700
+		summarizeBy: sum
+		sourceColumn: ingresos_totales
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Producto = m
 		mode: import
 		source =
 				let
 				    Source = Databricks.Catalogs("dbc-dcdf396f-a484.cloud.databricks.com", "/sql/1.0/warehouses/1f39bc17b27d0644", [Catalog="workspace", Database="default", QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null]),
-				    inventario_producto_gold_default_workspace = Source{[Item="inventario_producto_gold",Schema="default",Catalog="workspace"]}[Data]
+				    analisis_aes_gold_default_workspace = Source{[Item="analisis_aes_gold",Schema="default",Catalog="workspace"]}[Data]
 				in
-				    inventario_producto_gold_default_workspace
+				    analisis_aes_gold_default_workspace
+
+	changedProperty = Name
 

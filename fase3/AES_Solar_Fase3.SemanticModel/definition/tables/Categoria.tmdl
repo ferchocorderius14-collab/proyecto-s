@@ -1,4 +1,4 @@
-table '`workspace` `default` `producto_gold`'
+table Categoria
 	lineageTag: a469f2cc-dc27-4d65-9640-9152dbf04afe
 
 	column categoria_id
@@ -29,7 +29,7 @@ table '`workspace` `default` `producto_gold`'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition '`workspace` `default` `producto_gold`' = m
+	partition Categoria = m
 		mode: import
 		source =
 				let
@@ -37,6 +37,8 @@ table '`workspace` `default` `producto_gold`'
 				    producto_gold_default_workspace = Source{[Item="producto_gold",Schema="default",Catalog="workspace"]}[Data]
 				in
 				    producto_gold_default_workspace
+
+	changedProperty = Name
 
 	annotation PBI_ResultType = Table
 

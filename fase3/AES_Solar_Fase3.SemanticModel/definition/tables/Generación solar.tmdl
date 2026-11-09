@@ -1,4 +1,4 @@
-table '`workspace` `default` `generacion_solar_gold`'
+table 'Generación solar'
 	lineageTag: 8f5c7307-38c2-4c0a-9cf5-fa67d2456342
 
 	column anio
@@ -36,7 +36,7 @@ table '`workspace` `default` `generacion_solar_gold`'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition '`workspace` `default` `generacion_solar_gold`' = m
+	partition 'Generación solar' = m
 		mode: import
 		source =
 				let
@@ -44,4 +44,6 @@ table '`workspace` `default` `generacion_solar_gold`'
 				    generacion_solar_gold_default_workspace = Source{[Item="generacion_solar_gold",Schema="default",Catalog="workspace"]}[Data]
 				in
 				    generacion_solar_gold_default_workspace
+
+	changedProperty = Name
 

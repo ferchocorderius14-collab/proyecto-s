@@ -1,4 +1,4 @@
-table '`workspace` `default` `ventas_radiacion_diaria_gold`'
+table 'Ventas diarias'
 	lineageTag: 3b9bf3fd-2171-466f-8825-d32482c37efc
 
 	column fecha
@@ -7,11 +7,6 @@ table '`workspace` `default` `ventas_radiacion_diaria_gold`'
 		lineageTag: 0f31ee76-3bd1-4ce4-b87f-a72bf868e7de
 		summarizeBy: none
 		sourceColumn: fecha
-
-		variation Variation
-			isDefault
-			relationship: 2176b0e4-4b7b-428f-b703-ab91e0d18d31
-			defaultHierarchy: LocalDateTable_8d9511b7-ebc5-4a43-8c2d-f225182541a9.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -83,7 +78,7 @@ table '`workspace` `default` `ventas_radiacion_diaria_gold`'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition '`workspace` `default` `ventas_radiacion_diaria_gold`' = m
+	partition 'Ventas diarias' = m
 		mode: import
 		source =
 				let
@@ -91,6 +86,8 @@ table '`workspace` `default` `ventas_radiacion_diaria_gold`'
 				    ventas_radiacion_diaria_gold_default_workspace = Source{[Item="ventas_radiacion_diaria_gold",Schema="default",Catalog="workspace"]}[Data]
 				in
 				    ventas_radiacion_diaria_gold_default_workspace
+
+	changedProperty = Name
 
 	annotation PBI_ResultType = Table
 

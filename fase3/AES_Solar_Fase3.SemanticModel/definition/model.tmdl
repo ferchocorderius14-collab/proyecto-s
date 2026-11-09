@@ -8,20 +8,18 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["`workspace` `default` `analisis_aes_gold`","`workspace` `default` `generacion_solar_gold`","`workspace` `default` `inventario_producto_gold`","`workspace` `default` `meteorologia_gold`","`workspace` `default` `ventas_producto_gold`","`workspace` `default` `ventas_radiacion_diaria_gold`","`workspace` `default` `producto_gold`"]
+annotation PBI_QueryOrder = ["Producto","Generación solar","Clima","Ventas diarias","Categoria"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
-ref table '`workspace` `default` `analisis_aes_gold`'
-ref table '`workspace` `default` `generacion_solar_gold`'
-ref table '`workspace` `default` `inventario_producto_gold`'
-ref table '`workspace` `default` `meteorologia_gold`'
-ref table DateTableTemplate_45f37c6a-965a-4c75-bbff-557264fd0845
-ref table LocalDateTable_35358c84-da90-4a88-8011-d5ace1b1f394
-ref table '`workspace` `default` `ventas_producto_gold`'
-ref table '`workspace` `default` `ventas_radiacion_diaria_gold`'
-ref table LocalDateTable_8d9511b7-ebc5-4a43-8c2d-f225182541a9
-ref table '`workspace` `default` `producto_gold`'
+ref table Producto
+ref table 'Generación solar'
+ref table Clima
+ref table 'Ventas diarias'
+ref table Categoria
+ref table Calendario
+ref table DateTableTemplate_661c98f5-7877-42be-a603-f9b720309d3f
+ref table LocalDateTable_9d778ba8-1696-4778-91df-df3382db281a
 
 ref cultureInfo en-US
 

@@ -1,4 +1,4 @@
-table '`workspace` `default` `meteorologia_gold`'
+table Clima
 	lineageTag: 11d941b7-6494-439d-a8e5-a14d607ff757
 
 	column fecha
@@ -10,8 +10,8 @@ table '`workspace` `default` `meteorologia_gold`'
 
 		variation Variation
 			isDefault
-			relationship: f9924411-a7b2-4ced-9724-57292f7d4bea
-			defaultHierarchy: LocalDateTable_35358c84-da90-4a88-8011-d5ace1b1f394.'Date Hierarchy'
+			relationship: 745c4bc6-bfdf-4ec1-b627-10ee55dfe9d5
+			defaultHierarchy: LocalDateTable_9d778ba8-1696-4778-91df-df3382db281a.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -57,7 +57,7 @@ table '`workspace` `default` `meteorologia_gold`'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	partition '`workspace` `default` `meteorologia_gold`' = m
+	partition Clima = m
 		mode: import
 		source =
 				let
@@ -65,6 +65,8 @@ table '`workspace` `default` `meteorologia_gold`'
 				    meteorologia_gold_default_workspace = Source{[Item="meteorologia_gold",Schema="default",Catalog="workspace"]}[Data]
 				in
 				    meteorologia_gold_default_workspace
+
+	changedProperty = Name
 
 	annotation PBI_ResultType = Table
 
