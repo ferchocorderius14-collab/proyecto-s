@@ -1,0 +1,3522 @@
+cultureInfo es-ES
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "dim_producto_gold": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_producto_gold"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim producto gold": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_producto_gold": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dim producto trophy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "dim producto title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "dim producto medal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "dim producto jewelry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.458
+			          }
+			        }
+			      ]
+			    },
+			    "dim_producto_gold.producto_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_producto_gold",
+			          "ConceptualProperty": "producto_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "producto id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "producto_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "producto identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "producto identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "producto identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "producto credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "dim_producto_gold.sku": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_producto_gold",
+			          "ConceptualProperty": "sku"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sku": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_producto_gold.nombre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_producto_gold",
+			          "ConceptualProperty": "nombre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_producto_gold.categoria_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_producto_gold",
+			          "ConceptualProperty": "categoria_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "categoria id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "categoria_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "categoria identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "categoria identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "categoria identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "categoria credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "dim_producto_gold.proveedor_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_producto_gold",
+			          "ConceptualProperty": "proveedor_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "proveedor id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "proveedor_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "proveedor identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "proveedor identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "proveedor identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "proveedor credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "dim_producto_gold.precio_actual": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_producto_gold",
+			          "ConceptualProperty": "precio_actual"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "precio actual": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "precio_actual": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "precio real": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "precio existent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "precio tangible": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "dim_producto_gold.estado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_producto_gold",
+			          "ConceptualProperty": "estado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "estado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_categoria_gold": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_categoria_gold"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim categoria gold": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_categoria_gold": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dim categoria trophy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "dim categoria title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "dim categoria medal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "dim categoria jewelry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.458
+			          }
+			        }
+			      ]
+			    },
+			    "dim_categoria_gold.categoria_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_categoria_gold",
+			          "ConceptualProperty": "categoria_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "categoria id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "categoria_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "categoria identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "categoria identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "categoria identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "categoria credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "dim_categoria_gold.nombre_categoria": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_categoria_gold",
+			          "ConceptualProperty": "nombre_categoria"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre categoria": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nombre_categoria": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Categoria": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_bodega_gold": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_bodega_gold"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim bodega gold": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_bodega_gold": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "gold": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "bodega gold": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "dim bodega trophy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "gilt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "gold-plated": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "gold-leaf": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "bodega trophy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "dim bodega title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "dim bodega medal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "trophy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "bodega title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "bodega medal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        }
+			      ]
+			    },
+			    "dim_bodega_gold.bodega_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_bodega_gold",
+			          "ConceptualProperty": "bodega_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "bodega id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "bodega_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "bodega identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "bodega identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "bodega identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "bodega credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "dim_bodega_gold.nombre_bodega": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_bodega_gold",
+			          "ConceptualProperty": "nombre_bodega"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre bodega": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nombre_bodega": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Bodega": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fact_inventario_gold": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_inventario_gold"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fact inventario gold": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fact_inventario_gold": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "fact inventario trophy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "fact inventario title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "fact inventario medal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "fact inventario jewelry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.458
+			          }
+			        }
+			      ]
+			    },
+			    "fact_inventario_gold.producto_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_inventario_gold",
+			          "ConceptualProperty": "producto_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "producto id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "producto_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "producto identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "producto identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "producto identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "producto credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "fact_inventario_gold.bodega_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_inventario_gold",
+			          "ConceptualProperty": "bodega_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "bodega id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "bodega_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "bodega identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "bodega identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "bodega identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "bodega credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "fact_inventario_gold.cantidad_disponible": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_inventario_gold",
+			          "ConceptualProperty": "cantidad_disponible"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cantidad disponible": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cantidad_disponible": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fact_ventas_gold": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_ventas_gold"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fact ventas gold": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fact venta gold": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "fact_ventas_gold": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "fact venta trophy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "fact venta title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "fact venta medal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "fact venta jewelry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.458
+			          }
+			        }
+			      ]
+			    },
+			    "fact_ventas_gold.detalle_pedido_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_ventas_gold",
+			          "ConceptualProperty": "detalle_pedido_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "detalle pedido id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "detalle_pedido_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "detalle pedido identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "detalle pedido identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "detalle pedido identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "detalle pedido credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "fact_ventas_gold.pedido_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_ventas_gold",
+			          "ConceptualProperty": "pedido_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pedido id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pedido_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "pedido identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "pedido identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "pedido identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "pedido credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "fact_ventas_gold.fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_ventas_gold",
+			          "ConceptualProperty": "fecha"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "fecha": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "fact_ventas_gold.cliente_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_ventas_gold",
+			          "ConceptualProperty": "cliente_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cliente id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cliente_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "cliente identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "cliente identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "cliente identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "cliente credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "fact_ventas_gold.producto_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_ventas_gold",
+			          "ConceptualProperty": "producto_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "producto id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "producto_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "producto identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "producto identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "producto identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "producto credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "fact_ventas_gold.bodega_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_ventas_gold",
+			          "ConceptualProperty": "bodega_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "bodega id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "bodega_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "bodega identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "bodega identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "bodega identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "bodega credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "fact_ventas_gold.cantidad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_ventas_gold",
+			          "ConceptualProperty": "cantidad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cantidad": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fact_ventas_gold.precio_unitario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_ventas_gold",
+			          "ConceptualProperty": "precio_unitario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "precio unitario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "precio_unitario": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fact_ventas_gold.importe_venta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_ventas_gold",
+			          "ConceptualProperty": "importe_venta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "importe venta": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "importe_venta": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fact_ventas_gold.estado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_ventas_gold",
+			          "ConceptualProperty": "estado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "estado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fact_ventas_gold.es_cancelado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_ventas_gold",
+			          "ConceptualProperty": "es_cancelado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "es cancelado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "es_cancelado": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_medida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.stock_total": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Stock Total"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "stock total": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "stock aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "stock overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "inventory total": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.dias_con_ventas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Dias con Ventas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dias con ventas": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.unidades_vendidas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Unidades Vendidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "unidades vendidas": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.indice_de_rotacion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Indice de Rotacion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "indice de rotacion": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.dias_de_cobertura": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Dias de Cobertura"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dias de cobertura": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.del_stock": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "% del Stock"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% del stock": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "% del inventory": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "percentage del stock": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "pct del stock": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "dim_fecha_gold": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_fecha_gold"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim fecha gold": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_fecha_gold": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dim fecha trophy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "dim fecha title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "dim fecha medal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "dim fecha jewelry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.458
+			          }
+			        }
+			      ]
+			    },
+			    "dim_fecha_gold.fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_fecha_gold",
+			          "ConceptualProperty": "fecha"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "dim_fecha_gold.anio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_fecha_gold",
+			          "ConceptualProperty": "anio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "anio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_fecha_gold.me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_fecha_gold",
+			          "ConceptualProperty": "mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_fecha_gold.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_fecha_gold",
+			          "ConceptualProperty": "dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_fecha_gold.dia_semana_num": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_fecha_gold",
+			          "ConceptualProperty": "dia_semana_num"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia semana num": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dia_semana_num": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dia semana number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "dim_fecha_gold.dia_semana": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_fecha_gold",
+			          "ConceptualProperty": "dia_semana"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia semana": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dia_semana": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_fecha_gold.semana_anio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_fecha_gold",
+			          "ConceptualProperty": "semana_anio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "semana anio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "semana_anio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fact_clima_gold": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_clima_gold"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fact clima gold": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fact_clima_gold": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "fact clima trophy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "fact clima title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "fact clima medal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "fact clima jewelry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.458
+			          }
+			        }
+			      ]
+			    },
+			    "fact_clima_gold.fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_clima_gold",
+			          "ConceptualProperty": "fecha"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "fecha": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "fact_clima_gold.radiacion_kwh_m_2_dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_clima_gold",
+			          "ConceptualProperty": "radiacion_kwh_m2_dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "radiacion kwh m 2 dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "radiacion_kwh_m2_dia": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fact_clima_gold.nivel_radiacion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_clima_gold",
+			          "ConceptualProperty": "nivel_radiacion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nivel radiacion": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nivel_radiacion": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "fact_clima_gold_has_dim_fecha_gold": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_clima_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_clima_gold": {
+			          "Target": {
+			            "Entity": "fact_clima_gold"
+			          }
+			        },
+			        "dim_fecha_gold": {
+			          "Target": {
+			            "Entity": "dim_fecha_gold"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_clima_gold"
+			            },
+			            "Object": {
+			              "Role": "dim_fecha_gold"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_clima_gold_have_dim_fecha_gold"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_fecha_gold"
+			            },
+			            "Object": {
+			              "Role": "fact_clima_gold"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_fecha_gold_have_fact_clima_gold"
+			        }
+			      ]
+			    },
+			    "fact_ventas_gold_has_dim_fecha_gold": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_ventas_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_ventas_gold": {
+			          "Target": {
+			            "Entity": "fact_ventas_gold"
+			          }
+			        },
+			        "dim_fecha_gold": {
+			          "Target": {
+			            "Entity": "dim_fecha_gold"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_ventas_gold"
+			            },
+			            "Object": {
+			              "Role": "dim_fecha_gold"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_ventas_gold_have_dim_fecha_gold"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_fecha_gold"
+			            },
+			            "Object": {
+			              "Role": "fact_ventas_gold"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_fecha_gold_have_fact_ventas_gold"
+			        }
+			      ]
+			    },
+			    "fact_ventas_gold_has_dim_bodega_gold": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_ventas_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_ventas_gold": {
+			          "Target": {
+			            "Entity": "fact_ventas_gold"
+			          }
+			        },
+			        "dim_bodega_gold": {
+			          "Target": {
+			            "Entity": "dim_bodega_gold"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_ventas_gold"
+			            },
+			            "Object": {
+			              "Role": "dim_bodega_gold"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_ventas_gold_have_dim_bodega_gold"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_bodega_gold"
+			            },
+			            "Object": {
+			              "Role": "fact_ventas_gold"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_bodega_gold_have_fact_ventas_gold"
+			        }
+			      ]
+			    },
+			    "fact_ventas_gold_has_dim_producto_gold": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_ventas_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_ventas_gold": {
+			          "Target": {
+			            "Entity": "fact_ventas_gold"
+			          }
+			        },
+			        "dim_producto_gold": {
+			          "Target": {
+			            "Entity": "dim_producto_gold"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_ventas_gold"
+			            },
+			            "Object": {
+			              "Role": "dim_producto_gold"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_ventas_gold_have_dim_producto_gold"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_producto_gold"
+			            },
+			            "Object": {
+			              "Role": "fact_ventas_gold"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_producto_gold_have_fact_ventas_gold"
+			        }
+			      ]
+			    },
+			    "fact_inventario_gold_has_dim_bodega_gold": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_inventario_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_inventario_gold": {
+			          "Target": {
+			            "Entity": "fact_inventario_gold"
+			          }
+			        },
+			        "dim_bodega_gold": {
+			          "Target": {
+			            "Entity": "dim_bodega_gold"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_inventario_gold"
+			            },
+			            "Object": {
+			              "Role": "dim_bodega_gold"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_inventario_gold_have_dim_bodega_gold"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_bodega_gold"
+			            },
+			            "Object": {
+			              "Role": "fact_inventario_gold"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_bodega_gold_have_fact_inventario_gold"
+			        }
+			      ]
+			    },
+			    "fact_inventario_gold_has_dim_producto_gold": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_inventario_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_inventario_gold": {
+			          "Target": {
+			            "Entity": "fact_inventario_gold"
+			          }
+			        },
+			        "dim_producto_gold": {
+			          "Target": {
+			            "Entity": "dim_producto_gold"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_inventario_gold"
+			            },
+			            "Object": {
+			              "Role": "dim_producto_gold"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_inventario_gold_have_dim_producto_gold"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_producto_gold"
+			            },
+			            "Object": {
+			              "Role": "fact_inventario_gold"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_producto_gold_have_fact_inventario_gold"
+			        }
+			      ]
+			    },
+			    "dim_producto_gold_has_dim_categoria_gold": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_producto_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_producto_gold": {
+			          "Target": {
+			            "Entity": "dim_producto_gold"
+			          }
+			        },
+			        "dim_categoria_gold": {
+			          "Target": {
+			            "Entity": "dim_categoria_gold"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_producto_gold"
+			            },
+			            "Object": {
+			              "Role": "dim_categoria_gold"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_producto_gold_have_dim_categoria_gold"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_categoria_gold"
+			            },
+			            "Object": {
+			              "Role": "dim_producto_gold"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_categoria_gold_have_dim_producto_gold"
+			        }
+			      ]
+			    },
+			    "fact_clima_gold_has_nivel_radiacion": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_clima_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_clima_gold": {
+			          "Target": {
+			            "Entity": "fact_clima_gold"
+			          }
+			        },
+			        "fact_clima_gold.nivel_radiacion": {
+			          "Target": {
+			            "Entity": "fact_clima_gold.nivel_radiacion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_clima_gold"
+			            },
+			            "Object": {
+			              "Role": "fact_clima_gold.nivel_radiacion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_clima_gold_have_nivel_radiacions"
+			        }
+			      ]
+			    },
+			    "fact_clima_gold_has_radiacion_kwh_m_2_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_clima_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_clima_gold": {
+			          "Target": {
+			            "Entity": "fact_clima_gold"
+			          }
+			        },
+			        "fact_clima_gold.radiacion_kwh_m_2_dia": {
+			          "Target": {
+			            "Entity": "fact_clima_gold.radiacion_kwh_m_2_dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_clima_gold"
+			            },
+			            "Object": {
+			              "Role": "fact_clima_gold.radiacion_kwh_m_2_dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_clima_gold_have_radiacion_kwh_m_2_dias"
+			        }
+			      ]
+			    },
+			    "dim_fecha_gold_has_semana_anio": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_fecha_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_fecha_gold": {
+			          "Target": {
+			            "Entity": "dim_fecha_gold"
+			          }
+			        },
+			        "dim_fecha_gold.semana_anio": {
+			          "Target": {
+			            "Entity": "dim_fecha_gold.semana_anio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_fecha_gold"
+			            },
+			            "Object": {
+			              "Role": "dim_fecha_gold.semana_anio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_fecha_gold_have_semana_anios"
+			        }
+			      ]
+			    },
+			    "dim_fecha_gold_has_dia_semana": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_fecha_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_fecha_gold": {
+			          "Target": {
+			            "Entity": "dim_fecha_gold"
+			          }
+			        },
+			        "dim_fecha_gold.dia_semana": {
+			          "Target": {
+			            "Entity": "dim_fecha_gold.dia_semana"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_fecha_gold"
+			            },
+			            "Object": {
+			              "Role": "dim_fecha_gold.dia_semana"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_fecha_gold_have_dia_semanas"
+			        }
+			      ]
+			    },
+			    "dim_fecha_gold_has_dia_semana_num": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_fecha_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_fecha_gold": {
+			          "Target": {
+			            "Entity": "dim_fecha_gold"
+			          }
+			        },
+			        "dim_fecha_gold.dia_semana_num": {
+			          "Target": {
+			            "Entity": "dim_fecha_gold.dia_semana_num"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_fecha_gold"
+			            },
+			            "Object": {
+			              "Role": "dim_fecha_gold.dia_semana_num"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_fecha_gold_have_dia_semana_nums"
+			        }
+			      ]
+			    },
+			    "dim_fecha_gold_has_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_fecha_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_fecha_gold": {
+			          "Target": {
+			            "Entity": "dim_fecha_gold"
+			          }
+			        },
+			        "dim_fecha_gold.dia": {
+			          "Target": {
+			            "Entity": "dim_fecha_gold.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_fecha_gold"
+			            },
+			            "Object": {
+			              "Role": "dim_fecha_gold.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_fecha_gold_have_dias"
+			        }
+			      ]
+			    },
+			    "dim_fecha_gold_has_me": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_fecha_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_fecha_gold": {
+			          "Target": {
+			            "Entity": "dim_fecha_gold"
+			          }
+			        },
+			        "dim_fecha_gold.me": {
+			          "Target": {
+			            "Entity": "dim_fecha_gold.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_fecha_gold"
+			            },
+			            "Object": {
+			              "Role": "dim_fecha_gold.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_fecha_gold_have_me"
+			        }
+			      ]
+			    },
+			    "dim_fecha_gold_has_anio": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_fecha_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_fecha_gold": {
+			          "Target": {
+			            "Entity": "dim_fecha_gold"
+			          }
+			        },
+			        "dim_fecha_gold.anio": {
+			          "Target": {
+			            "Entity": "dim_fecha_gold.anio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_fecha_gold"
+			            },
+			            "Object": {
+			              "Role": "dim_fecha_gold.anio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_fecha_gold_have_anios"
+			        }
+			      ]
+			    },
+			    "dim_fecha_gold_has_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_fecha_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_fecha_gold": {
+			          "Target": {
+			            "Entity": "dim_fecha_gold"
+			          }
+			        },
+			        "dim_fecha_gold.fecha": {
+			          "Target": {
+			            "Entity": "dim_fecha_gold.fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_fecha_gold"
+			            },
+			            "Object": {
+			              "Role": "dim_fecha_gold.fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_fecha_gold_have_fechas"
+			        }
+			      ]
+			    },
+			    "fact_inventario_gold_has_entity__medida_del_stock": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_inventario_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_inventario_gold": {
+			          "Target": {
+			            "Entity": "fact_inventario_gold"
+			          }
+			        },
+			        "entity__medida.del_stock": {
+			          "Target": {
+			            "Entity": "entity__medida.del_stock"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_inventario_gold"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.del_stock"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_inventario_gold_have__del_stock"
+			        }
+			      ]
+			    },
+			    "fact_ventas_gold_has_entity__medida_dias_de_cobertura": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_ventas_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_ventas_gold": {
+			          "Target": {
+			            "Entity": "fact_ventas_gold"
+			          }
+			        },
+			        "entity__medida.dias_de_cobertura": {
+			          "Target": {
+			            "Entity": "entity__medida.dias_de_cobertura"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_ventas_gold"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.dias_de_cobertura"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_ventas_gold_have_dias_de_cobertura"
+			        }
+			      ]
+			    },
+			    "fact_inventario_gold_has_entity__medida_dias_de_cobertura": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_inventario_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_inventario_gold": {
+			          "Target": {
+			            "Entity": "fact_inventario_gold"
+			          }
+			        },
+			        "entity__medida.dias_de_cobertura": {
+			          "Target": {
+			            "Entity": "entity__medida.dias_de_cobertura"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_inventario_gold"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.dias_de_cobertura"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_inventario_gold_have_dias_de_cobertura"
+			        }
+			      ]
+			    },
+			    "fact_ventas_gold_has_entity__medida_indice_de_rotacion": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_ventas_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_ventas_gold": {
+			          "Target": {
+			            "Entity": "fact_ventas_gold"
+			          }
+			        },
+			        "entity__medida.indice_de_rotacion": {
+			          "Target": {
+			            "Entity": "entity__medida.indice_de_rotacion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_ventas_gold"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.indice_de_rotacion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_ventas_gold_have_indice_de_rotacion"
+			        }
+			      ]
+			    },
+			    "fact_inventario_gold_has_entity__medida_indice_de_rotacion": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_inventario_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_inventario_gold": {
+			          "Target": {
+			            "Entity": "fact_inventario_gold"
+			          }
+			        },
+			        "entity__medida.indice_de_rotacion": {
+			          "Target": {
+			            "Entity": "entity__medida.indice_de_rotacion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_inventario_gold"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.indice_de_rotacion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_inventario_gold_have_indice_de_rotacion"
+			        }
+			      ]
+			    },
+			    "fact_ventas_gold_has_entity__medida_unidades_vendidas": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_ventas_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_ventas_gold": {
+			          "Target": {
+			            "Entity": "fact_ventas_gold"
+			          }
+			        },
+			        "entity__medida.unidades_vendidas": {
+			          "Target": {
+			            "Entity": "entity__medida.unidades_vendidas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_ventas_gold"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.unidades_vendidas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_ventas_gold_have_unidades_vendidas"
+			        }
+			      ]
+			    },
+			    "fact_ventas_gold_has_entity__medida_dias_con_ventas": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_ventas_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_ventas_gold": {
+			          "Target": {
+			            "Entity": "fact_ventas_gold"
+			          }
+			        },
+			        "entity__medida.dias_con_ventas": {
+			          "Target": {
+			            "Entity": "entity__medida.dias_con_ventas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_ventas_gold"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.dias_con_ventas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_ventas_gold_have_dias_con_ventas"
+			        }
+			      ]
+			    },
+			    "fact_inventario_gold_has_entity__medida_stock_total": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_inventario_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_inventario_gold": {
+			          "Target": {
+			            "Entity": "fact_inventario_gold"
+			          }
+			        },
+			        "entity__medida.stock_total": {
+			          "Target": {
+			            "Entity": "entity__medida.stock_total"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_inventario_gold"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.stock_total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_inventario_gold_have_stock_total"
+			        }
+			      ]
+			    },
+			    "fact_ventas_gold_has_es_cancelado": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_ventas_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_ventas_gold": {
+			          "Target": {
+			            "Entity": "fact_ventas_gold"
+			          }
+			        },
+			        "fact_ventas_gold.es_cancelado": {
+			          "Target": {
+			            "Entity": "fact_ventas_gold.es_cancelado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_ventas_gold"
+			            },
+			            "Object": {
+			              "Role": "fact_ventas_gold.es_cancelado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_ventas_gold_have_es_cancelados"
+			        }
+			      ]
+			    },
+			    "fact_ventas_gold_has_estado": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_ventas_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_ventas_gold": {
+			          "Target": {
+			            "Entity": "fact_ventas_gold"
+			          }
+			        },
+			        "fact_ventas_gold.estado": {
+			          "Target": {
+			            "Entity": "fact_ventas_gold.estado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_ventas_gold"
+			            },
+			            "Object": {
+			              "Role": "fact_ventas_gold.estado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_ventas_gold_have_estado"
+			        }
+			      ]
+			    },
+			    "fact_ventas_gold_has_importe_venta": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_ventas_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_ventas_gold": {
+			          "Target": {
+			            "Entity": "fact_ventas_gold"
+			          }
+			        },
+			        "fact_ventas_gold.importe_venta": {
+			          "Target": {
+			            "Entity": "fact_ventas_gold.importe_venta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_ventas_gold"
+			            },
+			            "Object": {
+			              "Role": "fact_ventas_gold.importe_venta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_ventas_gold_have_importe_ventas"
+			        }
+			      ]
+			    },
+			    "fact_ventas_gold_has_precio_unitario": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_ventas_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_ventas_gold": {
+			          "Target": {
+			            "Entity": "fact_ventas_gold"
+			          }
+			        },
+			        "fact_ventas_gold.precio_unitario": {
+			          "Target": {
+			            "Entity": "fact_ventas_gold.precio_unitario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_ventas_gold"
+			            },
+			            "Object": {
+			              "Role": "fact_ventas_gold.precio_unitario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_ventas_gold_have_precio_unitarios"
+			        }
+			      ]
+			    },
+			    "fact_ventas_gold_has_cantidad": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_ventas_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_ventas_gold": {
+			          "Target": {
+			            "Entity": "fact_ventas_gold"
+			          }
+			        },
+			        "fact_ventas_gold.cantidad": {
+			          "Target": {
+			            "Entity": "fact_ventas_gold.cantidad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_ventas_gold"
+			            },
+			            "Object": {
+			              "Role": "fact_ventas_gold.cantidad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_ventas_gold_have_cantidads"
+			        }
+			      ]
+			    },
+			    "fact_ventas_gold_has_cliente_id": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_ventas_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_ventas_gold": {
+			          "Target": {
+			            "Entity": "fact_ventas_gold"
+			          }
+			        },
+			        "fact_ventas_gold.cliente_id": {
+			          "Target": {
+			            "Entity": "fact_ventas_gold.cliente_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_ventas_gold"
+			            },
+			            "Object": {
+			              "Role": "fact_ventas_gold.cliente_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_ventas_gold_have_cliente_ids"
+			        }
+			      ]
+			    },
+			    "fact_ventas_gold_has_pedido_id": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_ventas_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_ventas_gold": {
+			          "Target": {
+			            "Entity": "fact_ventas_gold"
+			          }
+			        },
+			        "fact_ventas_gold.pedido_id": {
+			          "Target": {
+			            "Entity": "fact_ventas_gold.pedido_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_ventas_gold"
+			            },
+			            "Object": {
+			              "Role": "fact_ventas_gold.pedido_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_ventas_gold_have_pedido_ids"
+			        }
+			      ]
+			    },
+			    "fact_ventas_gold_has_detalle_pedido_id": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_ventas_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_ventas_gold": {
+			          "Target": {
+			            "Entity": "fact_ventas_gold"
+			          }
+			        },
+			        "fact_ventas_gold.detalle_pedido_id": {
+			          "Target": {
+			            "Entity": "fact_ventas_gold.detalle_pedido_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_ventas_gold"
+			            },
+			            "Object": {
+			              "Role": "fact_ventas_gold.detalle_pedido_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_ventas_gold_have_detalle_pedido_ids"
+			        }
+			      ]
+			    },
+			    "fact_inventario_gold_has_cantidad_disponible": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_inventario_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_inventario_gold": {
+			          "Target": {
+			            "Entity": "fact_inventario_gold"
+			          }
+			        },
+			        "fact_inventario_gold.cantidad_disponible": {
+			          "Target": {
+			            "Entity": "fact_inventario_gold.cantidad_disponible"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_inventario_gold"
+			            },
+			            "Object": {
+			              "Role": "fact_inventario_gold.cantidad_disponible"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_inventario_gold_have_cantidad_disponibles"
+			        }
+			      ]
+			    },
+			    "dim_bodega_gold_has_nombre_bodega": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_bodega_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_bodega_gold": {
+			          "Target": {
+			            "Entity": "dim_bodega_gold"
+			          }
+			        },
+			        "dim_bodega_gold.nombre_bodega": {
+			          "Target": {
+			            "Entity": "dim_bodega_gold.nombre_bodega"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_bodega_gold"
+			            },
+			            "Object": {
+			              "Role": "dim_bodega_gold.nombre_bodega"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_bodega_gold_have_nombre_bodegas"
+			        }
+			      ]
+			    },
+			    "dim_bodega_gold_has_bodega_id": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_bodega_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_bodega_gold": {
+			          "Target": {
+			            "Entity": "dim_bodega_gold"
+			          }
+			        },
+			        "dim_bodega_gold.bodega_id": {
+			          "Target": {
+			            "Entity": "dim_bodega_gold.bodega_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_bodega_gold"
+			            },
+			            "Object": {
+			              "Role": "dim_bodega_gold.bodega_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_bodega_gold_have_bodega_ids"
+			        }
+			      ]
+			    },
+			    "dim_categoria_gold_has_nombre_categoria": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_categoria_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_categoria_gold": {
+			          "Target": {
+			            "Entity": "dim_categoria_gold"
+			          }
+			        },
+			        "dim_categoria_gold.nombre_categoria": {
+			          "Target": {
+			            "Entity": "dim_categoria_gold.nombre_categoria"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_categoria_gold"
+			            },
+			            "Object": {
+			              "Role": "dim_categoria_gold.nombre_categoria"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_categoria_gold_have_nombre_categorias"
+			        }
+			      ]
+			    },
+			    "dim_categoria_gold_has_categoria_id": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_categoria_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_categoria_gold": {
+			          "Target": {
+			            "Entity": "dim_categoria_gold"
+			          }
+			        },
+			        "dim_categoria_gold.categoria_id": {
+			          "Target": {
+			            "Entity": "dim_categoria_gold.categoria_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_categoria_gold"
+			            },
+			            "Object": {
+			              "Role": "dim_categoria_gold.categoria_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_categoria_gold_have_categoria_ids"
+			        }
+			      ]
+			    },
+			    "dim_producto_gold_has_estado": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_producto_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_producto_gold": {
+			          "Target": {
+			            "Entity": "dim_producto_gold"
+			          }
+			        },
+			        "dim_producto_gold.estado": {
+			          "Target": {
+			            "Entity": "dim_producto_gold.estado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_producto_gold"
+			            },
+			            "Object": {
+			              "Role": "dim_producto_gold.estado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_producto_gold_have_estado"
+			        }
+			      ]
+			    },
+			    "dim_producto_gold_has_precio_actual": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_producto_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_producto_gold": {
+			          "Target": {
+			            "Entity": "dim_producto_gold"
+			          }
+			        },
+			        "dim_producto_gold.precio_actual": {
+			          "Target": {
+			            "Entity": "dim_producto_gold.precio_actual"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_producto_gold"
+			            },
+			            "Object": {
+			              "Role": "dim_producto_gold.precio_actual"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_producto_gold_have_precio_actuals"
+			        }
+			      ]
+			    },
+			    "dim_producto_gold_has_proveedor_id": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_producto_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_producto_gold": {
+			          "Target": {
+			            "Entity": "dim_producto_gold"
+			          }
+			        },
+			        "dim_producto_gold.proveedor_id": {
+			          "Target": {
+			            "Entity": "dim_producto_gold.proveedor_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_producto_gold"
+			            },
+			            "Object": {
+			              "Role": "dim_producto_gold.proveedor_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_producto_gold_have_proveedor_ids"
+			        }
+			      ]
+			    },
+			    "dim_producto_gold_has_nombre": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_producto_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_producto_gold": {
+			          "Target": {
+			            "Entity": "dim_producto_gold"
+			          }
+			        },
+			        "dim_producto_gold.nombre": {
+			          "Target": {
+			            "Entity": "dim_producto_gold.nombre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_producto_gold"
+			            },
+			            "Object": {
+			              "Role": "dim_producto_gold.nombre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_producto_gold_have_nombres"
+			        }
+			      ]
+			    },
+			    "dim_producto_gold_has_sku": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_producto_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_producto_gold": {
+			          "Target": {
+			            "Entity": "dim_producto_gold"
+			          }
+			        },
+			        "dim_producto_gold.sku": {
+			          "Target": {
+			            "Entity": "dim_producto_gold.sku"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_producto_gold"
+			            },
+			            "Object": {
+			              "Role": "dim_producto_gold.sku"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_producto_gold_have_skus"
+			        }
+			      ]
+			    },
+			    "dim_producto_gold_has_producto_id": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_producto_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_producto_gold": {
+			          "Target": {
+			            "Entity": "dim_producto_gold"
+			          }
+			        },
+			        "dim_producto_gold.producto_id": {
+			          "Target": {
+			            "Entity": "dim_producto_gold.producto_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_producto_gold"
+			            },
+			            "Object": {
+			              "Role": "dim_producto_gold.producto_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_producto_gold_have_producto_ids"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+
