@@ -1,0 +1,28 @@
+relationship AutoDetected_208af3cf-3bb9-4706-a547-6b4147da44b3
+	fromColumn: fact_inventario_gold.producto_id
+	toColumn: dim_producto_gold.producto_id
+
+relationship AutoDetected_b7a2aa3e-6b5b-4c49-bc00-6ef3919f710d
+	fromColumn: fact_ventas_gold.producto_id
+	toColumn: dim_producto_gold.producto_id
+
+relationship AutoDetected_c80b4dbf-f08c-45c3-b798-b6492012c591
+	fromColumn: dim_producto_gold.categoria_id
+	toColumn: dim_categoria_gold.categoria_id
+
+relationship AutoDetected_cc958f8d-c2ec-42f3-91d5-3a0a1dfea937
+	fromColumn: fact_inventario_gold.bodega_id
+	toColumn: dim_bodega_gold.bodega_id
+
+relationship AutoDetected_0b7b5193-70cd-41a0-926a-f45d5e474a6a
+	fromColumn: fact_ventas_gold.bodega_id
+	toColumn: dim_bodega_gold.bodega_id
+
+relationship 9f898c6a-c833-a4b6-0ffe-7a0f2ab4dd65
+	fromColumn: fact_ventas_gold.fecha
+	toColumn: dim_fecha_gold.fecha
+
+relationship b217da88-eaa2-5c82-b152-763adced6496
+	fromColumn: fact_clima_gold.fecha
+	toColumn: dim_fecha_gold.fecha
+

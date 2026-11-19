@@ -1,0 +1,46 @@
+table fact_clima_gold
+	lineageTag: 621958c0-3a6c-4cbf-8899-6f68f06ec65c
+
+	column fecha
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: 20b1c560-ecd1-4805-8172-054f90cd8e90
+		summarizeBy: none
+		sourceColumn: fecha
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column radiacion_kwh_m2_dia
+		dataType: double
+		lineageTag: 548f724a-59e5-4cb6-9af9-b99c456881c2
+		summarizeBy: sum
+		sourceColumn: radiacion_kwh_m2_dia
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nivel_radiacion
+		dataType: string
+		lineageTag: 30354e13-19eb-45e1-a6d5-d44c9b2ed509
+		summarizeBy: none
+		sourceColumn: nivel_radiacion
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_clima_gold = m
+		mode: import
+		source =
+				let
+				  Origen = DatabricksMultiCloud.Catalogs("dbc-dcdf396f-a484.cloud.databricks.com", "/sql/1.0/warehouses/1f39bc17b27d0644", [Catalog = null, Database = null, QueryTags = null, EnableAutomaticProxyDiscovery = "enabled", Implementation = "2.0", Protocol = null]),
+				  #"Navegación 1" = Origen{[Name = "workspace", Kind = "Database"]}[Data],
+				  #"Navegación 2" = #"Navegación 1"{[Name = "default", Kind = "Schema"]}[Data],
+				  #"Navegación 3" = #"Navegación 2"{[Name = "fact_clima_gold", Kind = "Table"]}[Data]
+				in
+				  #"Navegación 3"
+

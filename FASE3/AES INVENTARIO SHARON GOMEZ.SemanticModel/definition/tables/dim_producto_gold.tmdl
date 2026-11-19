@@ -1,0 +1,78 @@
+table dim_producto_gold
+	lineageTag: 7f5a0af0-3b40-4c42-83d2-b2f560e795ae
+
+	column producto_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 34d74b92-5c3b-4f17-819b-6dd0777e694e
+		summarizeBy: none
+		sourceColumn: producto_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column sku
+		dataType: string
+		lineageTag: bf7cd1b4-5ca8-49ad-87e6-f01da8a70e34
+		summarizeBy: none
+		sourceColumn: sku
+
+		annotation SummarizationSetBy = Automatic
+
+	column nombre
+		dataType: string
+		lineageTag: 96b60d3b-ba3e-4684-a3ce-c0c7d3dd69e5
+		summarizeBy: none
+		sourceColumn: nombre
+
+		annotation SummarizationSetBy = Automatic
+
+	column categoria_id
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 4aef1873-382a-4121-afca-7deacbbd65ec
+		summarizeBy: none
+		sourceColumn: categoria_id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column proveedor_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 885cb8ae-c26e-47df-a271-725b47ef1e4c
+		summarizeBy: sum
+		sourceColumn: proveedor_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column precio_actual
+		dataType: double
+		lineageTag: b4c8eaae-2cbd-485c-9deb-5b5dd5f1ac0e
+		summarizeBy: sum
+		sourceColumn: precio_actual
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column estado
+		dataType: string
+		lineageTag: 31a8c592-e8cd-44a6-a4e2-ec64c358485e
+		summarizeBy: none
+		sourceColumn: estado
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_producto_gold = m
+		mode: import
+		source =
+				let
+				    Origen = DatabricksMultiCloud.Catalogs("dbc-dcdf396f-a484.cloud.databricks.com", "/sql/1.0/warehouses/1f39bc17b27d0644", [Catalog=null, Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation="2.0", Protocol=null]),
+				    workspace_Database = Origen{[Name="workspace",Kind="Database"]}[Data],
+				    default_Schema = workspace_Database{[Name="default",Kind="Schema"]}[Data],
+				    dim_producto_gold_Table = default_Schema{[Name="dim_producto_gold",Kind="Table"]}[Data]
+				in
+				    dim_producto_gold_Table
+

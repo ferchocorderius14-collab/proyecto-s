@@ -1,0 +1,75 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "a1535230c3ce3e4272c6",
+  "position": {
+    "x": 787.31707317073165,
+    "y": 219.51219512195121,
+    "z": 5000,
+    "height": 279.51219512195121,
+    "width": 490.2439024390244,
+    "tabOrder": 5000
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_bodega_gold"
+                    }
+                  },
+                  "Property": "nombre_bodega"
+                }
+              },
+              "queryRef": "dim_bodega_gold.nombre_bodega",
+              "nativeQueryRef": "nombre_bodega",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_medidas"
+                    }
+                  },
+                  "Property": "Stock Total"
+                }
+              },
+              "queryRef": "_medidas.Stock Total",
+              "nativeQueryRef": "Stock Total"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_medidas"
+                  }
+                },
+                "Property": "Stock Total"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
