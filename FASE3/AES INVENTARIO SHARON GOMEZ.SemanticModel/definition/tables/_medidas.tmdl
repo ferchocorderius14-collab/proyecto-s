@@ -1,0 +1,42 @@
+table _medidas
+	lineageTag: 302593cf-7b25-46ba-9a19-b845745fc4e7
+
+	measure 'Stock Total' = SUM(fact_inventario_gold[cantidad_disponible])
+		formatString: 0
+		lineageTag: d7075590-f4fc-497a-aa8a-f88931b625f0
+
+	measure 'Dias con Ventas' = DISTINCTCOUNT(fact_ventas_gold[fecha])
+		formatString: 0
+		lineageTag: bd1bbd54-b2aa-4b7f-bf5f-95fa17d0e9ed
+
+	measure 'Unidades Vendidas' = CALCULATE(SUM(fact_ventas_gold[cantidad]), fact_ventas_gold[es_cancelado] = 0)
+		lineageTag: 98a773d2-ca53-4e28-b808-d26cec799738
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Indice de Rotacion' = DIVIDE([Unidades Vendidas], [Stock Total])
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 3b25e828-93b3-4bae-9f78-efd2437558f5
+
+	measure 'Dias de Cobertura' = DIVIDE([Stock Total], DIVIDE([Unidades Vendidas], [Dias con Ventas]))
+		lineageTag: 2b058b4e-e391-465e-8c3f-c95d04bdca5a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '% del Stock' = DIVIDE([Stock Total], CALCULATE([Stock Total], ALL(dim_producto_gold)))
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 5cbf0d0e-2010-463a-b196-fdf82b27d14d
+
+	partition _medidas = m
+		mode: import
+		source =
+				let
+				  Origen = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Columna 1" = _t]),
+				    #"Columnas quitadas" = Table.RemoveColumns(Origen,{"Columna 1"})
+				in
+				  #"Columnas quitadas"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

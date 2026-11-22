@@ -1,0 +1,75 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "eb2560a1d9c17a220062",
+  "position": {
+    "x": 333.65853658536582,
+    "y": 219.51219512195121,
+    "z": 4000,
+    "height": 279.51219512195121,
+    "width": 453.65853658536582,
+    "tabOrder": 4000
+  },
+  "visual": {
+    "visualType": "clusteredBarChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_producto_gold"
+                    }
+                  },
+                  "Property": "nombre"
+                }
+              },
+              "queryRef": "dim_producto_gold.nombre",
+              "nativeQueryRef": "nombre",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_medidas"
+                    }
+                  },
+                  "Property": "Indice de Rotacion"
+                }
+              },
+              "queryRef": "_medidas.Indice de Rotacion",
+              "nativeQueryRef": "Indice de Rotacion"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_medidas"
+                  }
+                },
+                "Property": "Indice de Rotacion"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

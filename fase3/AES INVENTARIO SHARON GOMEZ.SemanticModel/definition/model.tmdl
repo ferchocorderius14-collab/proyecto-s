@@ -1,0 +1,26 @@
+model Model
+	culture: es-ES
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-ES
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["dim_producto_gold","dim_categoria_gold","dim_bodega_gold","fact_inventario_gold","fact_ventas_gold","_medidas","dim_fecha_gold","fact_clima_gold"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table dim_producto_gold
+ref table dim_categoria_gold
+ref table dim_bodega_gold
+ref table fact_inventario_gold
+ref table fact_ventas_gold
+ref table _medidas
+ref table dim_fecha_gold
+ref table fact_clima_gold
+
+ref cultureInfo es-ES
+

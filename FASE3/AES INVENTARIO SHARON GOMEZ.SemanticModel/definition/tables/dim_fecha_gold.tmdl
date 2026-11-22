@@ -1,0 +1,80 @@
+table dim_fecha_gold
+	lineageTag: d34c67f8-d6ff-4545-9bdb-7ff092aec576
+	dataCategory: Time
+
+	column fecha
+		dataType: dateTime
+		isKey
+		formatString: Long Date
+		lineageTag: 3f587afe-bb9d-41e3-9694-1c0501b73c91
+		summarizeBy: none
+		sourceColumn: fecha
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column anio
+		dataType: int64
+		formatString: 0
+		lineageTag: 71d0b30f-1e00-4bdf-b289-971778983dba
+		summarizeBy: sum
+		sourceColumn: anio
+
+		annotation SummarizationSetBy = Automatic
+
+	column mes
+		dataType: int64
+		formatString: 0
+		lineageTag: b4c93955-74e2-4887-bed1-495a5b33304d
+		summarizeBy: sum
+		sourceColumn: mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column dia
+		dataType: int64
+		formatString: 0
+		lineageTag: 0edb5f5f-bcce-4051-9c1c-e7566b5552a7
+		summarizeBy: sum
+		sourceColumn: dia
+
+		annotation SummarizationSetBy = Automatic
+
+	column dia_semana_num
+		dataType: int64
+		formatString: 0
+		lineageTag: c830bbf1-f426-4be4-9a09-1a8a7598fe82
+		summarizeBy: sum
+		sourceColumn: dia_semana_num
+
+		annotation SummarizationSetBy = Automatic
+
+	column dia_semana
+		dataType: string
+		lineageTag: bf7febe6-742d-4606-845b-cad15c66832b
+		summarizeBy: none
+		sourceColumn: dia_semana
+
+		annotation SummarizationSetBy = Automatic
+
+	column semana_anio
+		dataType: int64
+		formatString: 0
+		lineageTag: 4cc52417-8438-432a-a901-805b608c800e
+		summarizeBy: sum
+		sourceColumn: semana_anio
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_fecha_gold = m
+		mode: import
+		source =
+				let
+				  Origen = DatabricksMultiCloud.Catalogs("dbc-dcdf396f-a484.cloud.databricks.com", "/sql/1.0/warehouses/1f39bc17b27d0644", [Catalog = null, Database = null, QueryTags = null, EnableAutomaticProxyDiscovery = "enabled", Implementation = "2.0", Protocol = null]),
+				  #"Navegación 1" = Origen{[Name = "workspace", Kind = "Database"]}[Data],
+				  #"Navegación 2" = #"Navegación 1"{[Name = "default", Kind = "Schema"]}[Data],
+				  #"Navegación 3" = #"Navegación 2"{[Name = "dim_fecha_gold", Kind = "Table"]}[Data]
+				in
+				  #"Navegación 3"
+
