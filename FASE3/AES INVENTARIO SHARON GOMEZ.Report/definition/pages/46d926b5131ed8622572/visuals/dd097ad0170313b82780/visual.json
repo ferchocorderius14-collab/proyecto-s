@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "dd097ad0170313b82780",
   "position": {
-    "x": 770.4,
-    "y": 100.8,
-    "z": 3000,
+    "x": 668.33333333333337,
+    "y": 70,
+    "z": 3,
     "height": 100,
     "width": 233.33333333333334,
-    "tabOrder": 3000
+    "tabOrder": 3
   },
   "visual": {
     "visualType": "cardVisual",
@@ -52,5 +52,23 @@
       }
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "9c8576e96040d3b0a0d0",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_medidas"
+              }
+            },
+            "Property": "Dias de Cobertura"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

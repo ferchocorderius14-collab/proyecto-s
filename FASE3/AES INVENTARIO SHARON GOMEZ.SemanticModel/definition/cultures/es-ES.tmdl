@@ -505,16 +505,6 @@ cultureInfo es-ES
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
-			        },
-			        {
-			          "Categoria": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -674,6 +664,12 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "bodega": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
 			          "bodega identification": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -737,7 +733,7 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "Bodega": {
+			          "nombre": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -898,6 +894,12 @@ cultureInfo es-ES
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "bodega": {
+			            "State": "Generated",
+			            "Weight": 0.97
 			          }
 			        },
 			        {
@@ -1340,6 +1342,12 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "bodega": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
 			          "bodega identification": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -1649,6 +1657,84 @@ cultureInfo es-ES
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.ingresos_totales": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Ingresos Totales"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ingresos totales": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.de_ingresos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "% de Ingresos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% de ingresos": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage de ingreso": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "pct de ingreso": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.brecha_stock_vs_ingresos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Brecha Stock vs Ingresos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "brecha stock vs ingresos": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "brecha inventory vs ingreso": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
 			          }
 			        }
 			      ]
@@ -2107,7 +2193,14 @@ cultureInfo es-ES
 			        "dim_bodega_gold": {
 			          "Target": {
 			            "Entity": "dim_bodega_gold"
-			          }
+			          },
+			          "Nouns": [
+			            {
+			              "bodega": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
 			        }
 			      },
 			      "Phrasings": [
@@ -2199,7 +2292,14 @@ cultureInfo es-ES
 			        "dim_bodega_gold": {
 			          "Target": {
 			            "Entity": "dim_bodega_gold"
-			          }
+			          },
+			          "Nouns": [
+			            {
+			              "bodega": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
 			        }
 			      },
 			      "Phrasings": [
@@ -2617,6 +2717,138 @@ cultureInfo es-ES
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "dim_fecha_gold_have_fechas"
+			        }
+			      ]
+			    },
+			    "fact_ventas_gold_has_entity__medida_brecha_stock_vs_ingresos": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_ventas_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_ventas_gold": {
+			          "Target": {
+			            "Entity": "fact_ventas_gold"
+			          }
+			        },
+			        "entity__medida.brecha_stock_vs_ingresos": {
+			          "Target": {
+			            "Entity": "entity__medida.brecha_stock_vs_ingresos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_ventas_gold"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.brecha_stock_vs_ingresos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_ventas_gold_have_brecha_stock_vs_ingresos"
+			        }
+			      ]
+			    },
+			    "fact_inventario_gold_has_entity__medida_brecha_stock_vs_ingresos": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_inventario_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_inventario_gold": {
+			          "Target": {
+			            "Entity": "fact_inventario_gold"
+			          }
+			        },
+			        "entity__medida.brecha_stock_vs_ingresos": {
+			          "Target": {
+			            "Entity": "entity__medida.brecha_stock_vs_ingresos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_inventario_gold"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.brecha_stock_vs_ingresos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_inventario_gold_have_brecha_stock_vs_ingresos"
+			        }
+			      ]
+			    },
+			    "fact_ventas_gold_has_entity__medida_de_ingresos": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_ventas_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_ventas_gold": {
+			          "Target": {
+			            "Entity": "fact_ventas_gold"
+			          }
+			        },
+			        "entity__medida.de_ingresos": {
+			          "Target": {
+			            "Entity": "entity__medida.de_ingresos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_ventas_gold"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.de_ingresos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_ventas_gold_have__de_ingresos"
+			        }
+			      ]
+			    },
+			    "fact_ventas_gold_has_entity__medida_ingresos_totales": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_ventas_gold"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_ventas_gold": {
+			          "Target": {
+			            "Entity": "fact_ventas_gold"
+			          }
+			        },
+			        "entity__medida.ingresos_totales": {
+			          "Target": {
+			            "Entity": "entity__medida.ingresos_totales"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_ventas_gold"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.ingresos_totales"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_ventas_gold_have_ingresos_totales"
 			        }
 			      ]
 			    },

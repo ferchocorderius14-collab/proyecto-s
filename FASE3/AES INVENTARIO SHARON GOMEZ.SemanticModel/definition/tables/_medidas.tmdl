@@ -27,6 +27,21 @@ table _medidas
 		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
 		lineageTag: 5cbf0d0e-2010-463a-b196-fdf82b27d14d
 
+	measure 'Ingresos Totales' = CALCULATE(SUM(fact_ventas_gold[importe_venta]), fact_ventas_gold[es_cancelado] = 0)
+		lineageTag: 123aca82-e0a8-4f57-844d-7827dda62b93
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '% de Ingresos' = DIVIDE([Ingresos Totales], CALCULATE([Ingresos Totales], ALLSELECTED(dim_categoria_gold)))
+		lineageTag: 40e14d2e-c803-4fe7-b8b4-d81fd9978320
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Brecha Stock vs Ingresos' = ([% del Stock] - [% de Ingresos]) * 100
+		lineageTag: e44a7317-3c9d-42bd-beba-ac1112ba6000
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	partition _medidas = m
 		mode: import
 		source =

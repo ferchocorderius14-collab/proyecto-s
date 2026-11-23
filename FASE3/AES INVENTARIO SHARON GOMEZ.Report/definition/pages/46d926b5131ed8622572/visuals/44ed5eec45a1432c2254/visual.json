@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "44ed5eec45a1432c2254",
   "position": {
-    "x": 551.52,
-    "y": 99.36,
-    "z": 1000,
-    "height": 100.97560975609755,
-    "width": 207.80487804878049,
-    "tabOrder": 1000
+    "x": 460,
+    "y": 61.666666666666671,
+    "z": 1,
+    "height": 101.66666666666667,
+    "width": 208.33333333333334,
+    "tabOrder": 1
   },
   "visual": {
     "visualType": "cardVisual",
@@ -99,5 +99,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "bb5af9c6ee0c18531126",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_medidas"
+              }
+            },
+            "Property": "Unidades Vendidas"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

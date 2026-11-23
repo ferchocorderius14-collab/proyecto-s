@@ -1,9 +1,9 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "fa0587d06912b14a8b96",
   "position": {
-    "x": 334.08,
-    "y": 99.36,
+    "x": 263.33333333333337,
+    "y": 68.333333333333343,
     "z": 0,
     "height": 101.66666666666667,
     "width": 196.66666666666669,
@@ -52,5 +52,23 @@
       }
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "61607da30cc800231045",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_medidas"
+              }
+            },
+            "Property": "Stock Total"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

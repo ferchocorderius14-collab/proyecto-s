@@ -1,0 +1,153 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "21510449deb29e9e72d6",
+  "position": {
+    "x": 0,
+    "y": 559.4508009153318,
+    "z": 9000,
+    "height": 161.09839816933638,
+    "width": 1048.604118993135,
+    "tabOrder": 9000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_categoria_gold"
+                    }
+                  },
+                  "Property": "nombre_categoria"
+                }
+              },
+              "queryRef": "dim_categoria_gold.nombre_categoria",
+              "nativeQueryRef": "nombre_categoria"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_medidas"
+                    }
+                  },
+                  "Property": "Stock Total"
+                }
+              },
+              "queryRef": "_medidas.Stock Total",
+              "nativeQueryRef": "Stock Total"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_medidas"
+                    }
+                  },
+                  "Property": "Unidades Vendidas"
+                }
+              },
+              "queryRef": "_medidas.Unidades Vendidas",
+              "nativeQueryRef": "Unidades Vendidas"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_medidas"
+                    }
+                  },
+                  "Property": "Ingresos Totales"
+                }
+              },
+              "queryRef": "_medidas.Ingresos Totales",
+              "nativeQueryRef": "Ingresos Totales"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_medidas"
+                    }
+                  },
+                  "Property": "Indice de Rotacion"
+                }
+              },
+              "queryRef": "_medidas.Indice de Rotacion",
+              "nativeQueryRef": "Indice de Rotacion"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_medidas"
+                    }
+                  },
+                  "Property": "% del Stock"
+                }
+              },
+              "queryRef": "_medidas.% del Stock",
+              "nativeQueryRef": "% del Stock"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_medidas"
+                    }
+                  },
+                  "Property": "% de Ingresos"
+                }
+              },
+              "queryRef": "_medidas.% de Ingresos",
+              "nativeQueryRef": "% de Ingresos"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_medidas"
+                    }
+                  },
+                  "Property": "Brecha Stock vs Ingresos"
+                }
+              },
+              "queryRef": "_medidas.Brecha Stock vs Ingresos",
+              "nativeQueryRef": "Brecha Stock vs Ingresos"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_medidas"
+                  }
+                },
+                "Property": "Stock Total"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

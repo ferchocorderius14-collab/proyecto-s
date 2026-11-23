@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "eb2560a1d9c17a220062",
   "position": {
-    "x": 333.65853658536582,
-    "y": 219.51219512195121,
-    "z": 4000,
-    "height": 279.51219512195121,
+    "x": 311.70731707317071,
+    "y": 182.92682926829269,
+    "z": 4,
+    "height": 267.80487804878049,
     "width": 453.65853658536582,
-    "tabOrder": 4000
+    "tabOrder": 4
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -71,5 +71,37 @@
       }
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "e6e79bc930a9a3a9408c",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_medidas"
+              }
+            },
+            "Property": "Indice de Rotacion"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "10693a7f8ee287e59ca3",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_producto_gold"
+              }
+            },
+            "Property": "nombre"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

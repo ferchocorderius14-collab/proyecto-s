@@ -2,22 +2,13 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json",
   "themeCollection": {
     "baseTheme": {
-      "name": "Fluent2-CY26SU10",
+      "name": "CY26SU07",
       "reportVersionAtImport": {
-        "visual": "2.14.0",
+        "visual": "2.11.0",
         "report": "3.4.0",
         "page": "2.3.1"
       },
       "type": "SharedResources"
-    },
-    "customTheme": {
-      "name": "AES_Soluciones_Solares020205867484927587.json",
-      "reportVersionAtImport": {
-        "visual": "2.14.0",
-        "report": "3.4.0",
-        "page": "2.3.1"
-      },
-      "type": "RegisteredResources"
     }
   },
   "objects": {
@@ -54,20 +45,9 @@
       "type": "SharedResources",
       "items": [
         {
-          "name": "Fluent2-CY26SU10",
-          "path": "BaseThemes/Fluent2-CY26SU10.json",
+          "name": "CY26SU07",
+          "path": "BaseThemes/CY26SU07.json",
           "type": "BaseTheme"
-        }
-      ]
-    },
-    {
-      "name": "RegisteredResources",
-      "type": "RegisteredResources",
-      "items": [
-        {
-          "name": "AES_Soluciones_Solares020205867484927587.json",
-          "path": "AES_Soluciones_Solares020205867484927587.json",
-          "type": "CustomTheme"
         }
       ]
     }

@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "cbc77a300e20e88504e5",
   "position": {
-    "x": 1020.96,
-    "y": 100.8,
-    "z": 2000,
+    "x": 918.33333333333337,
+    "y": 70,
+    "z": 2,
     "height": 101.66666666666667,
     "width": 205,
-    "tabOrder": 2000
+    "tabOrder": 2
   },
   "visual": {
     "visualType": "cardVisual",
@@ -52,5 +52,23 @@
       }
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "469009fc26738d918940",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_medidas"
+              }
+            },
+            "Property": "Indice de Rotacion"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "3a9b5d60c07cb71e616b",
   "position": {
-    "x": 11.52,
-    "y": 358.56,
-    "z": 7000,
-    "height": 332.64,
-    "width": 298.08,
-    "tabOrder": 7000
+    "x": 0,
+    "y": 434.28571428571433,
+    "z": 7,
+    "height": 250.2439024390244,
+    "width": 321.95121951219511,
+    "tabOrder": 7
   },
   "visual": {
     "visualType": "slicer",
@@ -27,9 +27,8 @@
                 }
               },
               "queryRef": "dim_bodega_gold.nombre_bodega",
-              "nativeQueryRef": "Bodega",
-              "active": true,
-              "displayName": "Bodega"
+              "nativeQueryRef": "nombre_bodega",
+              "active": true
             }
           ]
         }
@@ -51,10 +50,70 @@
       ],
       "general": [
         {
-          "properties": {}
+          "properties": {
+            "filter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "d",
+                    "Entity": "dim_bodega_gold",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "d"
+                                }
+                              },
+                              "Property": "nombre_bodega"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'Bodega Regional Santa Ana'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
         }
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "022357a9c2d80b4da2ec",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_bodega_gold"
+              }
+            },
+            "Property": "nombre_bodega"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

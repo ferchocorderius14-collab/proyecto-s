@@ -1,0 +1,75 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "6f077853cf7ed2faa851",
+  "position": {
+    "x": 764.48512585812352,
+    "y": 61.510297482837522,
+    "z": 5000,
+    "height": 279.7254004576659,
+    "width": 489.15331807780319,
+    "tabOrder": 5000
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_categoria_gold"
+                    }
+                  },
+                  "Property": "nombre_categoria"
+                }
+              },
+              "queryRef": "dim_categoria_gold.nombre_categoria",
+              "nativeQueryRef": "nombre_categoria",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_medidas"
+                    }
+                  },
+                  "Property": "Brecha Stock vs Ingresos"
+                }
+              },
+              "queryRef": "_medidas.Brecha Stock vs Ingresos",
+              "nativeQueryRef": "Brecha Stock vs Ingresos"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_medidas"
+                  }
+                },
+                "Property": "Brecha Stock vs Ingresos"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
