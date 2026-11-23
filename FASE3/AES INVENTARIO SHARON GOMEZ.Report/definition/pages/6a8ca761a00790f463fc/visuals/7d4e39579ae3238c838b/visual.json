@@ -1,0 +1,54 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "7d4e39579ae3238c838b",
+  "position": {
+    "x": 902.45044184380231,
+    "y": 116.16909481729162,
+    "z": 7000,
+    "height": 150.40840697396703,
+    "width": 377.85526630045382,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_bodega_gold"
+                    }
+                  },
+                  "Property": "nombre_bodega"
+                }
+              },
+              "queryRef": "dim_bodega_gold.nombre_bodega",
+              "nativeQueryRef": "nombre_bodega",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Basic'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
