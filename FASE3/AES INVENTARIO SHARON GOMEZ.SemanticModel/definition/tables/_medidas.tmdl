@@ -27,18 +27,17 @@ table _medidas
 		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
 		lineageTag: 5cbf0d0e-2010-463a-b196-fdf82b27d14d
 
-	measure 'Ingresos Totales' = CALCULATE(SUM(fact_ventas_gold[importe_venta]), fact_ventas_gold[es_cancelado] = 0)
-		lineageTag: 123aca82-e0a8-4f57-844d-7827dda62b93
+	measure 'Ventas Netas' = SUM(fact_ventas_gold[importe_venta])
+		lineageTag: f55f516e-81d6-420a-9673-6af99d9565b5
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure '% de Ingresos' = DIVIDE([Ingresos Totales], CALCULATE([Ingresos Totales], ALLSELECTED(dim_categoria_gold)))
-		lineageTag: 40e14d2e-c803-4fe7-b8b4-d81fd9978320
+	measure Pedidos = DISTINCTCOUNT(fact_ventas_gold[pedido_id])
+		formatString: 0
+		lineageTag: 87736843-fda6-454d-9733-c43a8c6dd50c
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure 'Brecha Stock vs Ingresos' = ([% del Stock] - [% de Ingresos]) * 100
-		lineageTag: e44a7317-3c9d-42bd-beba-ac1112ba6000
+	measure 'Ticket Promedio' = DIVIDE([Ventas Netas], [Pedidos], 0)
+		lineageTag: af746452-e687-4047-8986-102f4c33fd27
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
